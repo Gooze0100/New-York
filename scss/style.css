@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -50,5 +51,519 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+.btn {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  border-radius: 3px;
+  outline: none;
+  -webkit-transition: .2s all linear;
+  transition: .2s all linear;
+  background-color: transparent;
+  border: 1px solid #dd4b39;
+  color: #dd4b39;
+  padding: 20px 25px;
+  line-height: 0;
+}
+
+.btn-primary {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  border-radius: 3px;
+  outline: none;
+  -webkit-transition: .2s all linear;
+  transition: .2s all linear;
+  background-color: #dd4b39;
+  border: 1px solid #dd4b39;
+  color: #fff;
+  padding: 20px 25px;
+  line-height: 0;
+}
+
+.btn-primary:hover {
+  background: #b03424;
+  border-color: #b03424;
+}
+
+.btn-secondary {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  border-radius: 3px;
+  outline: none;
+  -webkit-transition: .2s all linear;
+  transition: .2s all linear;
+  background-color: #0fa0ac;
+  border: 1px solid #0fa0ac;
+  line-height: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Chivo', sans-serif;
+  font-size: 15px;
+  color: #404040;
+  line-height: 1.8em;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #404040;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 95%;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-se {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.flex-sa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.flex-sb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-as {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(25% - 20px);
+}
+
+.inputs form {
+  width: 100%;
+}
+
+.inputs form input {
+  margin: 5px 0 5px 0;
+  outline: none;
+  height: 30px;
+  background: #fff url(https://cdn.shopify.com/s/files/1/0005/4630/8159/t/42/assets/search.jpg?v=7482504448895875010) no-repeat 6px;
+  padding: 12px 20px;
+  padding-left: 28px;
+  line-height: 22px;
+  border-radius: 2px;
+  color: #5f6a7d;
+  font-size: 13px;
+  border: none;
+  width: 100%;
+}
+
+.buy ul li:first-of-type {
+  margin-right: 20px;
+}
+
+.buy ul li a {
+  color: white;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.buy ul li a i {
+  margin-right: 3px;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.menu {
+  padding: 15px 0 10px 0;
+}
+
+.logo {
+  margin: 0 auto;
+  margin-top: 15px;
+  max-width: 270px;
+}
+
+nav {
+  margin: 20px auto 0;
+  min-height: 35px;
+  border-top: 1px dotted #cec6bf;
+  border-bottom: 1px dotted #cec6bf;
+}
+
+nav ul {
+  line-height: 1.5;
+  text-align: center;
+  position: relative;
+}
+
+nav ul li {
+  padding: 10px 20px 8px;
+  cursor: pointer;
+  line-height: 1.8em;
+  display: inline-block;
+  position: relative;
+}
+
+nav ul li a {
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  -webkit-transition: .3s all ease-out;
+  transition: .3s all ease-out;
+}
+
+nav ul li a span i {
+  padding-left: 5px;
+  font-size: 0.8em;
+}
+
+nav ul li a:hover {
+  color: #dd4b39;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #fff;
+  width: 100%;
+  top: 55px;
+}
+
+.sub-menu .menu-column {
+  border-right: 1px solid #cec6bf;
+  width: 100%;
+  padding: 0 33px;
+  margin: 33px 0;
+  z-index: 1;
+  text-align: left;
+}
+
+.sub-menu .menu-column:last-child {
+  border: none;
+}
+
+.sub-menu .menu-column:last-child div:first-child {
+  max-width: 1300px;
+}
+
+.sub-menu .menu-column:last-child div:last-child {
+  width: 100%;
+  line-height: 1.5;
+}
+
+.sub-menu .menu-column:last-child div:last-child a {
+  color: black;
+  font-size: 13px;
+  -webkit-transition: .3s all ease-out;
+  transition: .3s all ease-out;
+}
+
+.sub-menu .menu-column:last-child div:last-child a:hover {
+  color: #dd4b39;
+}
+
+.sub-menu .menu-column div h3 {
+  font-size: 13px;
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.sub-menu .menu-column div h3 a {
+  -webkit-transition: .3s all ease-out;
+  transition: .3s all ease-out;
+}
+
+.sub-menu .menu-column div h3 a:hover {
+  color: #dd4b39;
+}
+
+.sub-menu .menu-column div:last-child div {
+  padding: 8px 0;
+}
+
+.sub-menu .menu-column div:last-child div a {
+  color: black;
+  font-size: 13px;
+  -webkit-transition: .3s all ease-out;
+  transition: .3s all ease-out;
+}
+
+.sub-menu .menu-column div:last-child div a:hover {
+  color: #dd4b39;
+}
+
+.sub-menu .slogan {
+  font-size: 13px;
+  background-color: #e0e0e0;
+  margin-top: 10px;
+  padding: 10px;
+  border-top: 1px solid #cec6bf;
+}
+
+.information-about-website p {
+  margin: 0 0 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.information-about-website p strong {
+  font-weight: 700;
+}
+
+.information-about-website p a {
+  color: #dd4b39;
+  -webkit-transition: .3s all ease-out;
+  transition: .3s all ease-out;
+}
+
+.information-about-website p a em {
+  font-style: italic;
+}
+
+.information-about-website p a:hover {
+  color: #b03424;
+}
+
+.saddle {
+  padding-top: 25px;
+}
+
+.saddle .saddle-img {
+  width: calc(50% - 10px);
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.saddle section {
+  width: calc(50% - 10px);
+  display: inline-block;
+  vertical-align: top;
+}
+
+.saddle section div h3:first-of-type {
+  line-height: 1.3;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 20px;
+  margin: 0 auto 15px 0;
+  border-bottom: 1px solid #cec6bf;
+  width: 100%;
+  padding: 0 0 12px 0;
+}
+
+.saddle section div h3:first-of-type a {
+  color: #dd4b39;
+  -webkit-transition: .3s all ease-out;
+  transition: .3s all ease-out;
+}
+
+.saddle section div h3:first-of-type a:hover {
+  color: #b03424;
+}
+
+.saddle section .stars {
+  margin-bottom: 10px;
+}
+
+.saddle section .stars span:first-child {
+  margin: 0 3px 0 0;
+}
+
+.saddle section .stars span:first-child i {
+  width: 0.9em;
+  height: 0.9em;
+}
+
+.saddle section .price {
+  margin-bottom: 15px;
+}
+
+.saddle section .price div {
+  font-size: 22px;
+}
+
+.saddle section .description div {
+  margin: 0 0 20px;
+}
+
+.saddle section .description div:last-child small {
+  font-size: 80%;
+}
+
+.saddle section .description div:last-child small em {
+  font-style: italic;
+}
+
+.saddle section .description div:last-child small em a {
+  color: #dd4b39;
+  -webkit-transition: .3s all ease-out;
+  transition: .3s all ease-out;
+}
+
+.saddle section .description div:last-child small em a:hover {
+  color: #b03424;
+}
+
+.saddle section .quantity {
+  margin: 12px 0 24px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.saddle section .quantity span {
+  border: 1px solid #cec6bf;
+  font-size: 20px;
+  font-weight: 300;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  line-height: 42px;
+  text-align: center;
+  display: block;
+}
+
+.saddle section .quantity span:first-child {
+  border-right: 0;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.saddle section .quantity span:first-child:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.saddle section .quantity span:last-child {
+  border-left: 0;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.saddle section .quantity span:last-child:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.saddle section .quantity input {
+  padding: 10px 15px;
+  line-height: 1.4;
+  min-height: 44px;
+  max-width: 100%;
+  min-width: 50px;
+  text-align: center;
+  width: calc(48.5% - 88px);
+  height: 35px;
+  border: 1px solid #dfdfdf;
+  outline: none;
+  background: #ffffff;
+  color: #5f6a7d;
+  font-size: 13px;
+}
+
+.saddle section .quantity input::-webkit-inner-spin-button, .saddle section .quantity input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.saddle section .buttons-for-buying {
+  width: 100%;
+}
+
+.saddle section .buttons-for-buying div:first-child button {
+  min-height: 43px;
+  margin-bottom: 24px;
+  max-width: 100%;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.saddle section .buttons-for-buying div:last-child button {
+  min-height: 43px;
+  margin-bottom: 24px;
+  max-width: 100%;
+  padding: 10px 20px;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

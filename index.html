@@ -11,15 +11,15 @@
 </head>
 <body>
     <header>
-        <section>
-            <section class="container">
-                <section>
+        <section class="bg-black">
+            <section class="container flex-sb">
+                <section class="inputs">
                     <form action="">
                         <input type="text" placeholder="Search..." autocomplete="off">
                     </form>
                 </section>
-                <section>
-                    <ul>
+                <section class="buy">
+                    <ul class="flex-sb">
                         <li><a href=""><i class="fas fa-shopping-cart"></i>Cart (0)</a></li>
                         <li><a href="">Checkout</a></li>
                     </ul>
@@ -27,24 +27,22 @@
             </section>
         </section>
         <section class="container">
-            <section>
-                <section>
-                    <div>
-                        <a href="">
-                            <img src="/img/NYC-logo-red_2000x.png" alt="Title">
-                        </a>
-                    </div>
+            <section class="menu">
+                <section class="logo">
+                    <a href="">
+                        <img src="/img/NYC-logo-red_2000x.png" alt="Logo">
+                    </a>
                 </section>
                 <nav>
                     <ul>
                         <li>
                             <a href="">Home</a>
                         </li>
-                        <li>
-                            <a href="">Bike Shop</a>
+                        <li class="call-sub-menu">
+                            <a href="">Bike Shop <span><i class="fas fa-chevron-down"></i></span></a>
                         </li>
                         <section class="sub-menu">
-                            <section>
+                            <section class="flex-as">
                                 <section class="menu-column">
                                     <div>
                                         <h3>
@@ -52,9 +50,15 @@
                                         </h3>
                                     </div>
                                     <div>
-                                        <a href="">Bottle racks</a>
-                                        <a href="">Cargo racks + baskets</a>
-                                        <a href="">Helmets</a>
+                                        <div>
+                                            <a href="">Bottle racks</a>
+                                        </div>
+                                        <div>
+                                            <a href="">Cargo racks + baskets</a>
+                                        </div>
+                                        <div>
+                                            <a href="">Helmets</a>
+                                        </div>
                                     </div>
                                 </section>
                                 <section class="menu-column">
@@ -64,11 +68,21 @@
                                         </h3>
                                     </div>
                                     <div>
-                                        <a href="">City</a>
-                                        <a href="">Commuter</a>
-                                        <a href="">Cruiser</a>
-                                        <a href="">Hybrid</a>
-                                        <a href="">On Sale</a>
+                                        <div>
+                                            <a href="">City</a>
+                                        </div>
+                                        <div>
+                                            <a href="">Commuter</a>
+                                        </div>
+                                        <div>
+                                            <a href="">Cruiser</a>
+                                        </div>
+                                        <div>
+                                            <a href="">Hybrid</a>
+                                        </div>
+                                        <div>
+                                            <a href="">On Sale</a>
+                                        </div>
                                     </div>
                                 </section>
                                 <div class="menu-column">
@@ -78,25 +92,29 @@
                                         </h3>
                                     </div>
                                     <div>
-                                        <a href="">Saddles</a>
-                                        <a href="">Handlebars + Grips</a>
-                                        <a href="">Tires + Kickstands</a>
+                                        <div>
+                                            <a href="">Saddles</a>
+                                        </div>
+                                        <div>
+                                            <a href="">Handlebars + Grips</a>
+                                        </div>
+                                        <div>
+                                            <a href="">Tires + Kickstands</a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="menu-column">
                                     <div>
-                                        <h3>
-                                            <a href="">
-                                                <img src="/img/Franklin-7-2017-Angle_Matte-Coral_200x.jpg" alt="Franklin type bicycle">
-                                            </a>
-                                        </h3>
+                                        <a href="">
+                                            <img src="/img/Franklin-7-2017-Angle_Matte-Coral_200x.jpg" alt="Franklin type bicycle">
+                                        </a>
                                     </div>
                                     <div>
                                         <a href="">The Franklin 7 features all the classic attributes of a great utility city bike.</a>
                                     </div>
                                 </div>
                             </section>
-                            <div>
+                            <div class="slogan flex">
                                 <a href="">New items in stock! Take them for a spin today...</a>
                             </div>
                         </section>
@@ -133,7 +151,7 @@
                                 <div>
                                     <h3>Built for adventure</h3>
                                     <h4>For the people, by the people</h4>
-                                    <aside>
+                                    <aside class="btn-primary">
                                         <a href="">Shop Bikes</a>
                                     </aside>
                                 </div>
@@ -193,15 +211,15 @@
             </section>
         </section>
         <section class="container">
-            <section>
+            <section class="information-about-website">
                 <p>
                     This is an authorized demo shop for the <strong>Responsive Shopify theme </strong>
                     by Out of the Sandbox. The products that are showcased here can be purchased from our featured merchant, 
-                    <a href=""><em>Brooklyn Bicycle Co.</em></a>
+                    <a href="https://www.brooklynbicycleco.com/"><em>Brooklyn Bicycle Co.</em></a>
                 </p>
             </section>
-            <section>
-                <div>
+            <section class="saddle">
+                <div class="saddle-img">
                     <img src="/img/Selle_Royal_Ondina_Saddle_600x.jpg" alt="Saddles">
                 </div>
                 <section>
@@ -210,7 +228,7 @@
                             <a href="">Ondina Comfort Saddle</a>
                         </h3>
                     </div>
-                    <div>
+                    <div class="stars">
                         <span>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -220,28 +238,30 @@
                         </span>
                         <span>3 reviews</span>
                     </div>
-                    <div>
-                        <p>$29.99</p>
+                    <div class="price">
+                        <div>$29.99</div>
                     </div>
-                    <div>
-                        <p>This vintage-style saddle is suitable for the Relaxed riding position. The Ondina is generously padded with Royalgel™, which guarantees the highest level of comfort by reducing pressure peaks up to 40%. Its unique shape, its silver springs and buttons, along with its classic Selle Royal labelling and burnished sepia finish, make it radiate with old-school charm.</p>
+                    <div class="description">
+                        <div>
+                            <p>This vintage-style saddle is suitable for the Relaxed riding position. The Ondina is generously padded with Royalgel™, which guarantees the highest level of comfort by reducing pressure peaks up to 40%. Its unique shape, its silver springs and buttons, along with its classic Selle Royal labelling and burnished sepia finish, make it radiate with old-school charm.</p>
+                        </div>
+                        <div>
+                            <small>
+                                <em>This is a demo shop for the Shopify Responsive theme. To purchase the products please visit <a href="">Brooklyn Bicycle Co.</a></em>
+                            </small>
+                        </div>
                     </div>
-                    <div>
-                        <small>
-                            <em>This is a demo shop for the Shopify Responsive theme. To purchase the products please visit <a href="">Brooklyn Bicycle Co.</a></em>
-                        </small>
-                    </div>
-                    <div>
+                    <div class="quantity">
                         <span>-</span>
                         <input type="number" name="quantity" id="quantity" value="1" min="1">
                         <span>+</span>
                     </div>
-                    <div>
+                    <div class="buttons-for-buying">
                         <div>
-                            <button>Add to Cart</button>
+                            <button class="btn">Add to Cart</button>
                         </div>
                         <div>
-                            <button>Buy it now</button>
+                            <button class="btn-primary">Buy it now</button>
                         </div>
                     </div>
                 </section>
@@ -280,7 +300,7 @@
                 <section>
                     <a href="">
                         <div>
-                            <img src="" alt="Wythe bike">
+                            <img src="/img/Wythe_1600x.webp" alt="Wythe bike">
                             <aside>Comming soon</aside>
                             <span>Wythe</span>
                         </div>
@@ -289,7 +309,7 @@
                 <section>
                     <a href="">
                         <div>
-                            <img src="" alt="Roebling bike">
+                            <img src="/img/Roebling-Raw_1600x.webp" alt="Roebling bike">
                             <span>Roebling</span>
                             <span>$519.99</span>
                         </div>
@@ -298,7 +318,7 @@
                 <section>
                     <a href="">
                         <div>
-                            <img src="" alt="Lorimer bike">
+                            <img src="/img/Lorimer_44d495cf-34ce-44d1-88c4-31d0026b3d73_1600x.webp" alt="Lorimer bike">
                             <span>Lorimer</span>
                             <span>$519.99</span>
                         </div>
@@ -307,7 +327,7 @@
                 <section>
                     <a href="">
                         <div>
-                            <img src="" alt="Franklin Single Speed bike">
+                            <img src="/img/Franklin-1-2017-Profile_Gloss-Black_1600x.webp" alt="Franklin Single Speed bike">
                             <span>Franklin Single Speed</span>
                             <span>Sold out</span>
                         </div>
@@ -316,7 +336,7 @@
                 <section>
                     <a href="">
                         <div>
-                            <img src="" alt="Franklin 7 bike">
+                            <img src="/img/Franklin-7-2017-Profile_Matte-Coral_1600x.webp" alt="Franklin 7 bike">
                             <span>Franklin 7</span>
                             <span>$499.99</span>
                         </div>
@@ -325,7 +345,7 @@
                 <section>
                     <a href="">
                         <div>
-                            <img src="" alt="Franklin 3 bike">
+                            <img src="/img/Franklin_3_Ivory_1600x.webp" alt="Franklin 3 bike">
                             <button>Sale</button>
                             <span>Franklin 3</span>
                             <span><em>from</em>$399.99</span><span>$449.99</span>
@@ -335,7 +355,7 @@
             </section>
         </section>
         <section>
-            <img src="" alt="White bike">
+            <img src="/img/video-blue-wall2_1600x.webp" alt="White bike">
             <h3>Chasing the smoothest ride</h3>
             <h4>More than just good looks</h4>
             <aside>Play video</aside>
@@ -346,21 +366,21 @@
             </h2>
             <section>
                 <article>
-                    <img src="" alt="Flowers">
+                    <img src="/img/launch_1600x.webp" alt="Flowers">
                     <h5><a href="">Our Launch</a></h5>
                     <time>August 01, 2018</time>
                     <p>After much planning, decorating, sourcing, packaging, pricing, and more, it was time to launch. Celebrating with a small party for friends, family, and everyone in between, we finally shared our brand and products with the world.</p>
                     <span></span>
                 </article>
                 <article>
-                    <img src="" alt="Girl on bike">
+                    <img src="/img/girlbike_1600x.webp" alt="Girl on bike">
                     <h5><a href="">How to Get More People on Bikes</a></h5>
                     <time>August 01, 2018</time>
                     <p>For the past number of years, we’ve been passionate about the growth of cycling through local advocacy. From this, we have learned why compassion, creativity and connectivity are so crucial for successfully selling cycling to riders of every group.</p>
                     <span></span>
                 </article>
                 <article>
-                    <img src="" alt="Room of bikes">
+                    <img src="/img/showroom_1600x.webp" alt="Room of bikes">
                     <h5><a href="">Where Our Bikes Are Made</a></h5>
                     <time>July 19, 2018</time>
                     <p>Our bikes are designed in Brooklyn—by our in-house team in collaboration with members of our Board of Advisors, a select group of industry experts—and manufactured in China and Taiwan.</p>
