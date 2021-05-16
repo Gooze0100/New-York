@@ -1,7 +1,51 @@
 // Variables
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+
 $primary-color: #404040;
 $secondary-color: #dd4b39;
 $third-color: #0fa0ac;
 
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+    &-se {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    &-sa {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    &-sb {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-as {
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+    }
+
+    &-se-fd {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    &-c-fd {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}

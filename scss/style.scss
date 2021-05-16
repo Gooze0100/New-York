@@ -36,36 +36,6 @@ a {
     width: 95%;
 }
 
-.flex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    &-se {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-
-    &-sa {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-
-    &-sb {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    &-as {
-        display: flex;
-        align-items: stretch;
-        justify-content: center;
-    }
-}
-
 .inputs {
     display: flex;
     width: calc(25% - 20px);
@@ -379,7 +349,7 @@ nav {
 
             span {
                 border: 1px solid #cec6bf;
-                font-size: 20px;
+                font-size: 18px;
                 font-weight: 300;
                 cursor: pointer;
                 width: 44px;
@@ -452,10 +422,153 @@ nav {
             }
         }
     }
-
 }
 
+.bike-wheel {
+    width: 100%;
+}
 
+.testimonials {
+    margin-bottom: 30px;
+
+    blockquote {
+        
+        p {
+            text-align: center;
+            padding: 15px 15px;
+            margin: 0 10px;
+            width: calc(100% - 20px);
+
+            a {
+                color: $secondary-color;
+                transition: .3s all ease-out;
+
+                &:hover {
+                    color: #b03424;
+                }
+            }
+        }
+
+        aside {
+            padding: 0 10px;
+            text-align: center;
+
+            span strong {
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.bikes {
+    margin-top: 20px;
+    
+    h2 {
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 1px;
+        font-size: 23px;
+        border-bottom: 1px solid #cec6bf;
+        padding: 0 0 12px 0;
+        line-height: 50px;
+        margin: 0 auto 20px;
+    }
+
+    .bikes-img {
+
+        section {
+            position: relative;
+
+            section {
+                margin: 0 10px 15px 10px;
+                padding-bottom: 8px;
+                position: relative;
+
+                a div {
+
+                    &.after-btn {
+                        position: relative;
+
+                        aside.button-appear {
+                            text-transform: uppercase;
+                            display: block;
+                            padding: 10px 20px;
+                            background-color: $primary-color;
+                            border-radius: 3px;
+                            line-height: 1.5;
+                            text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+                            letter-spacing: 1px;
+                            font-size: 14px;
+                            text-align: center;
+                            cursor: pointer;
+                            color: #fff;
+                            position: absolute;
+                            bottom: 30%;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            z-index: 1;
+                            opacity: 0;
+                            transition: .1s all linear;
+
+                            &:hover {
+                                background-color: $secondary-color;
+                            }
+                        }
+
+                        &:hover aside.button-appear {
+                            opacity: 1;
+                        }
+
+                        &:hover .red {
+                            color: $secondary-color;
+                        }
+
+                        div aside.btn-primary {
+                            padding: 20px 20px;
+                            font-size: 15px;
+                            border-radius: 0;
+                        }
+                    }
+
+                    div {
+                       position: relative;
+                       max-width: 1300px;
+                       margin-bottom: 15px;
+
+                       aside {
+                            padding: 20px 20px;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                        }
+                    }
+
+                    .bold {
+                        font-weight: 700;
+
+                        small {
+                            font-size: 80%;
+                            em {
+                                font-style: italic;
+                            }
+                        }
+
+                        & span {
+                            text-decoration: line-through;
+                            font-weight: 400;
+                            font-style: italic;
+                        }
+
+                        &.red-span {
+                            color: $secondary-color;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
 
 
 
