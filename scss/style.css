@@ -3,6 +3,7 @@
    License: none (public domain)
 */
 @import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -142,6 +143,18 @@ table {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.flex-sb-fs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .btn {
@@ -644,6 +657,7 @@ nav ul li a:hover {
   padding: 0 0 12px 0;
   line-height: 50px;
   margin: 0 auto 20px;
+  text-rendering: optimizeLegibility;
 }
 
 .bikes .bikes-img section {
@@ -735,5 +749,123 @@ nav ul li a:hover {
 
 .bikes .bikes-img section section a div .bold.red-span {
   color: #dd4b39;
+}
+
+.video {
+  position: relative;
+  padding: 40px 0;
+}
+
+.video div {
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: calc(6.25%);
+  text-align: left;
+  color: white;
+}
+
+.video div h3 {
+  font-weight: 400;
+  font-size: 45px;
+  margin-bottom: 9px;
+  line-height: 50px;
+  text-transform: uppercase;
+  font-family: 'Abril Fatface', cursive;
+  letter-spacing: 1px;
+  text-rendering: optimizeLegibility;
+}
+
+.video div h4 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 35px;
+  letter-spacing: 1px;
+  text-rendering: optimizeLegibility;
+}
+
+.video div aside {
+  padding: 20px 25px;
+  cursor: default;
+  display: inline-block;
+}
+
+.all-articles h2:first-child {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-rendering: optimizeLegibility;
+  font-size: 23px;
+  border-bottom: 1px solid #cec6bf;
+  padding-bottom: 12px;
+  line-height: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.all-articles section {
+  padding-bottom: 30px;
+}
+
+.all-articles section article {
+  margin: 0 10px;
+  width: calc(33.33333% - 20px);
+}
+
+.all-articles section article div.zoom-img a div {
+  max-width: 1800px;
+  overflow: hidden;
+  line-height: 0;
+  vertical-align: top;
+}
+
+.all-articles section article div.zoom-img a div img {
+  max-width: 100%;
+  -webkit-transition: .35s all ease-in-out;
+  transition: .35s all ease-in-out;
+}
+
+.all-articles section article div.zoom-img a div:hover img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.all-articles section article h5 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-rendering: optimizeLegibility;
+  font-size: 16px;
+  line-height: 28px;
+  padding-bottom: 5px;
+  margin: 15px 0 5px 0;
+}
+
+.all-articles section article h6 {
+  margin: 0 0 20px;
+  color: #dd4b39;
+  font-size: 12.5px;
+}
+
+.all-articles section article div:last-child {
+  position: relative;
+}
+
+.all-articles section article div:last-child p {
+  line-height: 1.8em;
+  max-height: 9em;
+  margin-bottom: 7px;
+  overflow: hidden;
+}
+
+.all-articles section article div:last-child span {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(white));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), white);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  padding: 30px 0;
 }
 /*# sourceMappingURL=style.css.map */
