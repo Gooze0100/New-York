@@ -692,7 +692,38 @@ nav {
     }
 }
 
+.bg-gray {
+    background-color: #e9e7e5;
+    width: 100%;
+    margin: 30px 0;
+    margin-bottom: 15px;
 
+    .subscribe {
+        padding: 30px 0;
+        
+        h2 {
+            color: #000;
+            line-height: 1;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-rendering: optimizeLegibility;
+            font-size: 23px;
+            margin: 0 auto 20px;
+            padding: 12px 0;
+            text-align: center;
+        }
+
+        h3 {
+            text-align: center;
+            color: #000;
+            margin-bottom: 20px;
+        }
+        
+        form {
+            
+        }
+    }
+}
 
 
 
