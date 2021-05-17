@@ -38,10 +38,10 @@
                         <li>
                             <a href="">Home</a>
                         </li>
-                        <li class="call-sub-menu">
+                        <li class="call-sub-menu" id="openSubMenu">
                             <a href="">Bike Shop <span><i class="fas fa-chevron-down"></i></span></a>
                         </li>
-                        <section class="sub-menu">
+                        <section class="sub-menu" id="subMenu">
                             <section class="flex-as">
                                 <section class="menu-column">
                                     <div>
@@ -139,24 +139,22 @@
         </section>
     </header>
     <main>
-        <section>
-            <section>
+        <section class="all-slide-show">
+            <section class="all-imges-for-slide-show">
                 <section>
                     <a href="">
                         <div>
                             <img src="/img/DSC07831_copy_2000x.progressive_9f97424b-e092-40d1-a635-9f4fa09fbf96_1600x.jpg" alt="Woman next to bicycle">
                         </div>
-                        <div class="slideShow__caption">
-                            <div>
-                                <div>
-                                    <h3>Built for adventure</h3>
-                                    <h4>For the people, by the people</h4>
-                                    <aside class="btn-primary">
-                                        <a href="">Shop Bikes</a>
-                                    </aside>
-                                </div>
+                        <aside class="slideShow__caption">
+                            <div class="flex">
+                                <h3>Built for adventure</h3>
+                                <h4>For the people, by the people</h4>
+                                <aside class="btn-primary">
+                                    <a href="">Shop Bikes</a>
+                                </aside>
                             </div>
-                        </div>
+                        </aside>
                     </a>
                 </section>
                 <section>
@@ -164,17 +162,15 @@
                         <div>
                             <img src="/img/form-dk_1600x.jpg" alt="Bicycles wheel">
                         </div>
-                        <div class="slideShow__caption">
+                        <aside class="slideShow__caption">
                             <div>
-                                <div>
-                                    <h3>Get a grip on things</h3>
-                                    <h4>Custom tires, grips and handlebars</h4>
-                                    <aside>
-                                        <a href="">Shop Components</a>
-                                    </aside>
-                                </div>
+                                <h3>Get a grip on things</h3>
+                                <h4>Custom tires, grips and handlebars</h4>
+                                <aside class="btn-primary">
+                                    <a href="">Shop Components</a>
+                                </aside>
                             </div>
-                        </div>
+                        </aside>
                     </a>
                 </section>
                 <section>
@@ -182,17 +178,15 @@
                         <div>
                             <img src="/img/SS-night2_1600x.jpg" alt="Woman on bicycle">
                         </div>
-                        <div class="slideShow__caption">
+                        <aside class="slideShow__caption">
                             <div>
-                                <div>
-                                    <h3>Night Moves</h3>
-                                    <h4>Getting you there safely, in style</h4>
-                                    <aside>
-                                        <a href="">Shop Helmets</a>
-                                    </aside>
-                                </div>
+                                <h3>Night Moves</h3>
+                                <h4>Getting you there safely, in style</h4>
+                                <aside class="btn-primary">
+                                    <a href="">Shop Helmets</a>
+                                </aside>
                             </div>
-                        </div>
+                        </aside>
                     </a>
                 </section>
             </section>
@@ -252,9 +246,9 @@
                         </div>
                     </div>
                     <div class="quantity">
-                        <span>—</span>
+                        <span id="minus">—</span>
                         <input type="number" name="quantity" id="quantity" value="1" min="1">
-                        <span>+</span>
+                        <span id="plus">+</span>
                     </div>
                     <div class="buttons-for-buying">
                         <div>
@@ -388,14 +382,18 @@
                 </section>
             </section>
         </section>
-        <section class="video">
-            <img src="/img/video-blue-wall2_1600x.webp" alt="White bike">
-            <!-- <iframe src="https://youtu.be/iR8teOV05Ys" frameborder="0"></iframe> -->
-            <div>
-                <h3>Chasing the smoothest ride</h3>
-                <h4>More than just good looks</h4>
-                <aside class="btn-primary">Play video</aside>
-            </div>
+        <section class="all-video">
+            <section class="video">
+                <section class="img-on-video" id="playVideo">
+                    <img src="/img/video-blue-wall2_1600x.webp" alt="White bike">
+                    <div>
+                        <h3>Chasing the smoothest ride</h3>
+                        <h4>More than just good looks</h4>
+                        <aside class="btn-primary">Play video</aside>
+                    </div>
+                </section>
+                <iframe id="youtubeVideo" src="https://www.youtube.com/embed/iR8teOV05Ys?controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+            </section>
         </section>
         <section class="container">
             <section class="all-articles">

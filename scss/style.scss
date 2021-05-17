@@ -1,8 +1,7 @@
 @import 'reset';
 @import 'var';
 @import 'buttons';
-
-
+@import 'keyframes';
 @import 'media';
 
 * {
@@ -131,12 +130,15 @@ nav {
 }
 
 .sub-menu {
-    display: none;
+    // menu sutvarkyti nes js kai mouseover nuvarai dingsta :(
+    visibility: hidden;
+    opacity: 0;
     position: absolute;
     z-index: 1;
     background-color: #fff;
     width: 100%;
     top: 55px;
+    transition: .3s all ease-in;
 
     .menu-column {
         border-right: 1px solid #cec6bf;
@@ -190,7 +192,6 @@ nav {
             & a {
                 color: black;
                 font-size: 13px;
-                // line-height: 1.8s;
                 transition: .3s all ease-out;
 
                 &:hover {
@@ -209,7 +210,45 @@ nav {
     }
 }
 
+.all-slide-show {
 
+    .all-imges-for-slide-show {
+
+        section {
+            position: relative;
+
+            aside.slideShow__caption {
+                position: absolute;
+                top: 50%;
+
+                div {
+                    width: 50%;
+
+                    h3 {
+                        margin-bottom: 0.2em;
+                        color: #fff;
+                        font-family: 'Abril Fatface', cursive;
+                        font-weight: 400;
+                        font-size: 45px;
+                        line-height: 50px;
+                        margin: 0 auto 20px;
+                        padding: 0 0 8px 0;
+                        letter-spacing: 1px;
+                        text-rendering: optimizeLegibility;
+                    }
+
+                    h4 {
+                        line-height: 1.5em;
+                        margin-bottom: 35px;
+                        color: #fff;
+                        font-size: 18px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 
@@ -357,6 +396,7 @@ nav {
                 line-height: 42px;
                 text-align: center;
                 display: block;
+                user-select: none;
 
                 &:first-child {
                     border-right: 0;
@@ -570,43 +610,68 @@ nav {
     }
 }
 
-.video {
-    position: relative;
+.all-video {
     padding: 40px 0;
 
-    div {
-        position: absolute;
-        width: 50%;
-        top: 50%;
-        transform: translateY(-50%);
-        left: calc(6.25%);
-        text-align: left;
-        color: white;
+    .video {
+        position: relative;
 
-        h3 {
-            font-weight: 400;
-            font-size: 45px;
-            margin-bottom: 9px;
-            line-height: 50px;
-            text-transform: uppercase;
-            font-family: 'Abril Fatface', cursive;
-            letter-spacing: 1px;
-            text-rendering: optimizeLegibility;
+        .img-on-video {
+            position: relative;
+            line-height: 0;
+
+            div {
+                position: absolute;
+                width: 50%;
+                top: 50%;
+                transform: translateY(-50%);
+                left: calc(6.25%);
+                text-align: left;
+                color: white;
+        
+                h3 {
+                    font-weight: 400;
+                    font-size: 45px;
+                    margin-bottom: 9px;
+                    line-height: 50px;
+                    text-transform: uppercase;
+                    font-family: 'Abril Fatface', cursive;
+                    letter-spacing: 1px;
+                    text-rendering: optimizeLegibility;
+                    cursor: default;
+                }
+        
+                h4 {
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 1.5;
+                    margin-bottom: 35px;
+                    letter-spacing: 1px;
+                    text-rendering: optimizeLegibility;
+                    cursor: default;
+                }
+        
+                aside {
+                    padding: 20px 25px;
+                    cursor: default;
+                    display: inline-block;
+                }
+            }
         }
-
-        h4 {
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 1.5;
-            margin-bottom: 35px;
-            letter-spacing: 1px;
-            text-rendering: optimizeLegibility;
-        }
-
-        aside {
-            padding: 20px 25px;
-            cursor: default;
-            display: inline-block;
+    
+        iframe {
+            position: absolute;
+            z-index: -1;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            visibility: hidden;
+            animation-name: openVideo;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-in;
         }
     }
 }
