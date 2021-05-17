@@ -450,6 +450,10 @@ nav ul li a:hover {
   border-top: 1px solid #cec6bf;
 }
 
+.all-slide-show {
+  position: relative;
+}
+
 .all-slide-show .all-imges-for-slide-show section {
   position: relative;
 }
@@ -457,23 +461,27 @@ nav ul li a:hover {
 .all-slide-show .all-imges-for-slide-show section aside.slideShow__caption {
   position: absolute;
   top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 50%;
 }
 
 .all-slide-show .all-imges-for-slide-show section aside.slideShow__caption div {
-  width: 50%;
+  width: 100%;
 }
 
 .all-slide-show .all-imges-for-slide-show section aside.slideShow__caption div h3 {
   margin-bottom: 0.2em;
   color: #fff;
   font-family: 'Abril Fatface', cursive;
-  font-weight: 400;
   font-size: 45px;
   line-height: 50px;
   margin: 0 auto 20px;
   padding: 0 0 8px 0;
   letter-spacing: 1px;
   text-rendering: optimizeLegibility;
+  text-align: center;
 }
 
 .all-slide-show .all-imges-for-slide-show section aside.slideShow__caption div h4 {
@@ -482,6 +490,63 @@ nav ul li a:hover {
   color: #fff;
   font-size: 18px;
   text-align: center;
+}
+
+.all-slide-show .arrows aside {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  opacity: 0.8;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.all-slide-show .arrows aside:first-child {
+  left: 0;
+}
+
+.all-slide-show .arrows aside:last-child {
+  right: 0;
+}
+
+.all-slide-show .arrows aside svg {
+  width: 60%;
+  height: 60%;
+  fill: #fff;
+}
+
+.all-slide-show .dots {
+  position: relative;
+}
+
+.all-slide-show .dots ol {
+  bottom: 50px;
+  position: absolute;
+  width: 100%;
+}
+
+.all-slide-show .dots ol li {
+  line-height: 1.8em;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #333;
+  margin: 0 8px;
+  display: inline-block;
+  border: 1px solid transparent;
+  background-color: #fff;
+  height: 9px;
+  width: 9px;
+  opacity: 1;
+  -webkit-transition: .2s all ease-in-out;
+  transition: .2s all ease-in-out;
+}
+
+.all-slide-show .dots ol li#dot1 {
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .information-about-website p {

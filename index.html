@@ -147,11 +147,11 @@
                             <img src="/img/DSC07831_copy_2000x.progressive_9f97424b-e092-40d1-a635-9f4fa09fbf96_1600x.jpg" alt="Woman next to bicycle">
                         </div>
                         <aside class="slideShow__caption">
-                            <div class="flex">
+                            <div>
                                 <h3>Built for adventure</h3>
                                 <h4>For the people, by the people</h4>
-                                <aside class="btn-primary">
-                                    <a href="">Shop Bikes</a>
+                                <aside class="flex">
+                                    <a class="btn-primary" href="">Shop Bikes</a>
                                 </aside>
                             </div>
                         </aside>
@@ -166,8 +166,8 @@
                             <div>
                                 <h3>Get a grip on things</h3>
                                 <h4>Custom tires, grips and handlebars</h4>
-                                <aside class="btn-primary">
-                                    <a href="">Shop Components</a>
+                                <aside class="flex">
+                                    <a class="btn-primary" href="">Shop Components</a>
                                 </aside>
                             </div>
                         </aside>
@@ -182,25 +182,27 @@
                             <div>
                                 <h3>Night Moves</h3>
                                 <h4>Getting you there safely, in style</h4>
-                                <aside class="btn-primary">
-                                    <a href="">Shop Helmets</a>
+                                <aside class="flex">
+                                    <a class="btn-primary" href="">Shop Helmets</a>
                                 </aside>
                             </div>
                         </aside>
                     </a>
                 </section>
             </section>
-            <aside>
-                <i class="fas fa-chevron-left"></i>
+            <aside class="arrows">
+                <aside id="leftArr">
+                    <svg viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow"></path></svg>
+                </aside>
+                <aside id="rightArr">
+                    <svg viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow" transform="translate(100, 100) rotate(180) "></path></svg>
+                </aside>
             </aside>
-            <aside>
-                <i class="fas fa-chevron-right"></i>
-            </aside>
-            <section>
-                <ol>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+            <section class="dots">
+                <ol class="flex">
+                    <li id="dot1"></li>
+                    <li id="dot2"></li>
+                    <li id="dot3"></li>
                 </ol>
             </section>
         </section>
