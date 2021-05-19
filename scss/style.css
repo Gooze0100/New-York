@@ -619,11 +619,11 @@ li.call-sub-menu:hover + .sub-menu, li.call-sub-menu:focus + .sub-menu, .sub-men
 }
 
 .all-slide-show:hover #leftArr {
-  left: 30px;
+  left: 40px;
 }
 
 .all-slide-show:hover #rightArr {
-  right: 30px;
+  right: 40px;
 }
 
 .all-slide-show .arrows {
@@ -636,8 +636,8 @@ li.call-sub-menu:hover + .sub-menu, li.call-sub-menu:focus + .sub-menu, .sub-men
 
 .all-slide-show .arrows aside {
   position: absolute;
-  width: 30px;
-  height: 30px;
+  width: 44px;
+  height: 44px;
   opacity: 0.8;
 }
 
@@ -665,9 +665,12 @@ li.call-sub-menu:hover + .sub-menu, li.call-sub-menu:focus + .sub-menu, .sub-men
 }
 
 .all-slide-show .arrows aside svg {
-  width: 100%;
-  height: 100%;
   fill: #fff;
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  width: 60%;
+  height: 60%;
 }
 
 .all-slide-show .dots {
