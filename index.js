@@ -1,22 +1,41 @@
 "use strict"
 
-// Menu
-const subMenu = document.querySelector('#subMenu')
-document.querySelector('#openSubMenu').addEventListener('mouseover', openMenu);
-document.querySelector('#openSubMenu').addEventListener('mouseout', closeMenu);
+// Slideshow
 
-function openMenu() {
-    subMenu.style.visibility = 'visible';
-    subMenu.style.opacity = '1';
-}
+// const i = 0; // Start point
 
-function closeMenu() {
-    subMenu.style.visibility = 'hidden';
-    subMenu.style.opacity = '0';
-}
+// const images = []
 
-// Carousel
+// const time = 1000;
 
+// // Image list
+// images[0] = '/img/img1.jpg';
+// images[1] = '/img/img2.jpg';
+// images[2] = '/img/img3.jpg';
+
+// Change image
+
+// function changeImg() {
+//     document.slide.src = images[i];
+
+//     if(i < images.length - 1) {
+//         i++
+//     }   else {
+//         i = 0;
+//     }
+
+//     setTimeout('changeImg()', time);
+// }
+
+// window.onload = changeImg;
+
+
+// const slideIndex = 1;
+// showSlides(slideIndex);
+
+// funtion showSlides(n) {
+
+// }
 
 
 // Counter

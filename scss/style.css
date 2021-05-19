@@ -240,6 +240,24 @@ table {
   }
 }
 
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -334,6 +352,7 @@ nav {
   min-height: 35px;
   border-top: 1px dotted #cec6bf;
   border-bottom: 1px dotted #cec6bf;
+  position: relative;
 }
 
 nav ul {
@@ -367,16 +386,24 @@ nav ul li a:hover {
   color: #dd4b39;
 }
 
+li.call-sub-menu:hover + .sub-menu, li.call-sub-menu:focus + .sub-menu, .sub-menu:hover {
+  display: block;
+}
+
 .sub-menu {
-  visibility: hidden;
-  opacity: 0;
+  display: none;
   position: absolute;
   z-index: 1;
   background-color: #fff;
-  width: 100%;
-  top: 55px;
-  -webkit-transition: .3s all ease-in;
-  transition: .3s all ease-in;
+  width: calc(100% - 20px);
+  top: 46px;
+  left: 0;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 .sub-menu .menu-column {
@@ -452,26 +479,54 @@ nav ul li a:hover {
 
 .all-slide-show {
   position: relative;
+  margin-bottom: 50px;
 }
 
-.all-slide-show .all-imges-for-slide-show section {
+.all-slide-show .all-images-for-slide-show {
   position: relative;
 }
 
-.all-slide-show .all-imges-for-slide-show section aside.slideShow__caption {
+.all-slide-show .all-images-for-slide-show .img-1 {
+  width: 100%;
+  line-height: 0;
+}
+
+.all-slide-show .all-images-for-slide-show .img-2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  width: 100%;
+  line-height: 0;
+}
+
+.all-slide-show .all-images-for-slide-show .img-3 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -2;
+  width: 100%;
+  line-height: 0;
+}
+
+.all-slide-show .all-images-for-slide-show section aside.slideShow__caption1 {
   position: absolute;
   top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  right: 10%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   width: 50%;
 }
 
-.all-slide-show .all-imges-for-slide-show section aside.slideShow__caption div {
+.all-slide-show .all-images-for-slide-show section aside.slideShow__caption1 div {
   width: 100%;
 }
 
-.all-slide-show .all-imges-for-slide-show section aside.slideShow__caption div h3 {
+.all-slide-show .all-images-for-slide-show section aside.slideShow__caption1 div h3 {
   margin-bottom: 0.2em;
   color: #fff;
   font-family: 'Abril Fatface', cursive;
@@ -480,11 +535,12 @@ nav ul li a:hover {
   margin: 0 auto 20px;
   padding: 0 0 8px 0;
   letter-spacing: 1px;
+  text-transform: uppercase;
   text-rendering: optimizeLegibility;
   text-align: center;
 }
 
-.all-slide-show .all-imges-for-slide-show section aside.slideShow__caption div h4 {
+.all-slide-show .all-images-for-slide-show section aside.slideShow__caption1 div h4 {
   line-height: 1.5em;
   margin-bottom: 35px;
   color: #fff;
@@ -492,27 +548,125 @@ nav ul li a:hover {
   text-align: center;
 }
 
-.all-slide-show .arrows aside {
+.all-slide-show .all-images-for-slide-show section aside.slideShow__caption2 {
   position: absolute;
-  width: 44px;
-  height: 44px;
-  opacity: 0.8;
+  top: 50%;
+  left: 5%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 50%;
+}
+
+.all-slide-show .all-images-for-slide-show section aside.slideShow__caption2 div {
+  width: 100%;
+}
+
+.all-slide-show .all-images-for-slide-show section aside.slideShow__caption2 div h3 {
+  margin-bottom: 0.2em;
+  color: #fff;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 45px;
+  line-height: 50px;
+  margin: 0 auto 20px;
+  padding: 0 0 8px 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  text-align: center;
+}
+
+.all-slide-show .all-images-for-slide-show section aside.slideShow__caption2 div h4 {
+  line-height: 1.5em;
+  margin-bottom: 35px;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+}
+
+.all-slide-show .all-images-for-slide-show section aside.slideShow__caption3 {
+  position: absolute;
+  top: 50%;
+  right: 6%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 50%;
+}
+
+.all-slide-show .all-images-for-slide-show section aside.slideShow__caption3 div {
+  width: 100%;
+}
+
+.all-slide-show .all-images-for-slide-show section aside.slideShow__caption3 div h3 {
+  margin-bottom: 0.2em;
+  color: #fff;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 45px;
+  line-height: 50px;
+  margin: 0 auto 20px;
+  padding: 0 0 8px 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  text-align: center;
+}
+
+.all-slide-show .all-images-for-slide-show section aside.slideShow__caption3 div h4 {
+  line-height: 1.5em;
+  margin-bottom: 35px;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+}
+
+.all-slide-show:hover #leftArr {
+  left: 30px;
+}
+
+.all-slide-show:hover #rightArr {
+  right: 30px;
+}
+
+.all-slide-show .arrows {
+  position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  width: 100%;
+}
+
+.all-slide-show .arrows aside {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  opacity: 0.8;
 }
 
 .all-slide-show .arrows aside:first-child {
-  left: 0;
+  left: -32px;
+  z-index: -3;
+  cursor: pointer;
+  -webkit-transition: .3s all ease-out;
+  transition: .3s all ease-out;
+}
+
+.all-slide-show .arrows aside:first-child:hover {
+  opacity: 1;
 }
 
 .all-slide-show .arrows aside:last-child {
-  right: 0;
+  right: -32px;
+  cursor: pointer;
+  -webkit-transition: .3s all ease-out;
+  transition: .3s all ease-out;
+}
+
+.all-slide-show .arrows aside:last-child:hover {
+  opacity: 1;
 }
 
 .all-slide-show .arrows aside svg {
-  width: 60%;
-  height: 60%;
+  width: 100%;
+  height: 100%;
   fill: #fff;
 }
 
