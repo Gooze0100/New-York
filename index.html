@@ -12,7 +12,7 @@
 <body>
     <header>
         <section class="bg-black">
-            <section class="container flex-sb">
+            <section class="container flex-sb mobile-flex">
                 <section class="inputs">
                     <form action="">
                         <input type="text" placeholder="Search..." autocomplete="off">
@@ -141,62 +141,60 @@
     <main>
         <section class="all-slide-show">
             <section class="all-images-for-slide-show">
-                <section class="img-1">
+                <section class="img-1" id="bgImg">
                     <a href="">
                         <div>
                             <img name="slide" src="/img/img1.jpg" alt="Woman next to bicycle">
                         </div>
-                        <aside class="slideShow__caption1">
+                        <aside class="slideShow__caption1" id="mobile-flex-center">
                             <div>
-                                <h3>Built for adventure</h3>
-                                <h4>For the people, by the people</h4>
+                                <h3 id="mobile-h3-size">Built for adventure</h3>
+                                <h4 id="mobile-h4-size">For the people, by the people</h4>
                                 <aside class="flex">
-                                    <a class="btn-primary" href="">Shop Bikes</a>
+                                    <a class="btn-primary mobile-btn-1" href="">Shop Bikes</a>
                                 </aside>
                             </div>
                         </aside>
                     </a>
                 </section>
-                <section class="img-2">
+                <section class="img-2" id="bgImg">
                     <a href="">
                         <div>
                             <img src="/img/img2.jpg" alt="Bicycles wheel">
                         </div>
-                        <aside class="slideShow__caption2">
+                        <aside class="slideShow__caption2" id="mobile-flex-center">
                             <div>
-                                <h3>Get a grip on things</h3>
-                                <h4>Custom tires, grips and handlebars</h4>
+                                <h3 id="mobile-h3-size">Get a grip on things</h3>
+                                <h4 id="mobile-h4-size">Custom tires, grips and handlebars</h4>
                                 <aside class="flex">
-                                    <a class="btn-primary" href="">Shop Components</a>
+                                    <a class="btn-primary mobile-btn-1" href="">Shop Components</a>
                                 </aside>
                             </div>
                         </aside>
                     </a>
                 </section>
-                <section class="img-3">
+                <section class="img-3" id="bgImg">
                     <a href="">
                         <div>
                             <img src="/img/img3.jpg" alt="Woman on bicycle">
                         </div>
-                        <aside class="slideShow__caption3">
+                        <aside class="slideShow__caption3" id="mobile-flex-center">
                             <div>
-                                <h3>Night Moves</h3>
-                                <h4>Getting you there safely, in style</h4>
+                                <h3 id="mobile-h3-size">Night Moves</h3>
+                                <h4 id="mobile-h4-size">Getting you there safely, in style</h4>
                                 <aside class="flex">
-                                    <a class="btn-primary" href="">Shop Helmets</a>
+                                    <a class="btn-primary mobile-btn-1" href="">Shop Helmets</a>
                                 </aside>
                             </div>
                         </aside>
                     </a>
                 </section>
             </section>
-            <aside class="arrows">
-                <aside id="leftArr">
-                    <svg viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow"></path></svg>
-                </aside>
-                <aside id="rightArr">
-                    <svg viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow" transform="translate(100, 100) rotate(180) "></path></svg>
-                </aside>
+            <aside class="pointers" id="leftArr">
+                <svg viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow"></path></svg>
+            </aside>
+            <aside class="pointers" id="rightArr">
+                <svg viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow" transform="translate(100, 100) rotate(180) "></path></svg>
             </aside>
             <section class="dots">
                 <ol class="flex">
@@ -215,10 +213,10 @@
                 </p>
             </section>
             <section class="saddle">
-                <div class="saddle-img">
+                <div class="saddle-img" id="mobile-size">
                     <img src="/img/Selle_Royal_Ondina_Saddle_600x.jpg" alt="Saddles">
                 </div>
-                <section>
+                <section id="mobile-size">
                     <div>
                         <h3>
                             <a href="">Ondina Comfort Saddle</a>
@@ -249,7 +247,7 @@
                     </div>
                     <div class="quantity">
                         <span id="minus">—</span>
-                        <input type="number" name="quantity" id="quantity" value="1" min="1">
+                        <input class="mobile-input" type="number" name="quantity" id="quantity" value="1" min="1">
                         <span id="plus">+</span>
                     </div>
                     <div class="buttons-for-buying">
@@ -267,7 +265,7 @@
             <img src="/img/form2_1600x.jpg" alt="Bicycle wheel">
         </section>
         <section class="container">
-            <section class="testimonials flex-sb">
+            <section class="testimonials flex-sb mobile-flex">
                 <blockquote>
                     <p>
                         I was looking for a new bike for my morning commute and settled on the <a href="">Willow 7</a> in "Columbia Blue". My ride has never been so smooth and seamless, not to mention eye-catching! Absolutely love this bike and would recommend to all you commuters, you will actually look forward to going to work.
@@ -292,8 +290,8 @@
             <section class="bikes">
                 <h2><a href="">The city bike collection</a></h2>
                 <section class="bikes-img flex-se-fd">
-                    <section class="flex-se">
-                        <section>
+                    <section class="flex-se mobile-flex">
+                        <section class="mobile-bikes-size">
                             <a href="">
                                 <div class="after-btn">
                                     <div>
@@ -307,7 +305,7 @@
                                 </div>
                             </a>
                         </section>
-                        <section>
+                        <section class="mobile-bikes-size">
                             <a href="">
                                 <div class="after-btn">
                                     <div>
@@ -321,7 +319,7 @@
                                 </div>
                             </a>
                         </section>
-                        <section>
+                        <section class="mobile-bikes-size">
                             <a href="">
                                 <div class="after-btn">
                                     <div>
@@ -336,8 +334,8 @@
                             </a>
                         </section>
                     </section>
-                    <section class="flex-se">
-                        <section>
+                    <section class="flex-se mobile-flex">
+                        <section class="mobile-bikes-size">
                             <a href="">
                                 <div class="after-btn">
                                     <div>
@@ -351,7 +349,7 @@
                                 </div>
                             </a>
                         </section>
-                        <section>
+                        <section class="mobile-bikes-size">
                             <a href="">
                                 <div class="after-btn">
                                     <div>
@@ -365,7 +363,7 @@
                                 </div>
                             </a>
                         </section>
-                        <section>
+                        <section class="mobile-bikes-size">
                             <a href="">
                                 <div class="after-btn">
                                     <div>
@@ -389,12 +387,12 @@
                 <section class="img-on-video" id="playVideo">
                     <img src="/img/video-blue-wall2_1600x.webp" alt="White bike">
                     <div>
-                        <h3>Chasing the smoothest ride</h3>
-                        <h4>More than just good looks</h4>
-                        <aside class="btn-primary">Play video</aside>
+                        <h3 id="mobile-h3-size">Chasing the smoothest ride</h3>
+                        <h4 id="mobile-h4-size">More than just good looks</h4>
+                        <aside class="btn-primary mobile-btn-1">Play video</aside>
                     </div>
                 </section>
-                <iframe id="youtubeVideo" src="https://www.youtube.com/embed/iR8teOV05Ys?controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                <iframe id="youtubeVideo" src="https://www.youtube.com/embed/iR8teOV05Ys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </section>
         </section>
         <section class="container">
@@ -402,8 +400,8 @@
                 <h2>
                     <a href="">From the bike blog</a>
                 </h2>
-                <section class="flex-sb-fs">
-                    <article>
+                <section class="flex-sb-fs mobile-flex">
+                    <article id="mobile-article-size">
                         <div class="zoom-img">
                             <a href="">
                                 <div>
@@ -420,7 +418,7 @@
                             <span></span>
                         </div>
                     </article>
-                    <article>
+                    <article id="mobile-article-size">
                         <div class="zoom-img">
                             <a href="">
                                 <div>
@@ -437,7 +435,7 @@
                             <span></span>
                         </div>
                     </article>
-                    <article>
+                    <article id="mobile-article-size">
                         <div class="zoom-img">
                             <a href="">
                                 <div>
@@ -462,14 +460,14 @@
                 <section class="subscribe">
                     <h2>Subscribe today!</h2>
                     <h3>Sign up for our monthly newsletter to get the latest bike news in and around NYC, and exclusive flash sale access!</h3>
-                    <form action="">
-                        <div class="flex">
+                    <form id="mobile-form-size" action="">
+                        <div class="flex mobile-flex">
                             <input type="text" name="f-name" placeholder="First name">
                             <input type="text" name="l-name" placeholder="Last name">
                         </div>
-                        <div class="flex">
+                        <div class="flex mobile-flex">
                             <input type="email" name="email" placeholder="Email address">
-                            <button class="btn-primary" type="submit">Sign up</button>
+                            <button class="btn-primary" id="mobile-btn-2" type="submit">Sign up</button>
                         </div>
                     </form>
                 </section>
@@ -478,8 +476,8 @@
     </main>
     <footer>
         <section class="container flex-c-fd">
-            <hr>
-            <ul>
+            <hr class="mobile-hr">
+            <ul class="mobile-flex-column">
                 <li><a href="">Home</a></li>
                 <li><a href="">All Products</a></li>
                 <li><a href="">The Bike Blog</a></li>
@@ -501,7 +499,5 @@
             </div>
         </section>
     </footer>
-    <!-- read more daryti kaip aside tokia semantic, aside tai linkas tipo nukreiptas ir pan. time irgi uzdeti ant laiko datatime attribute masinai nurodyta panaudoti dar blockquate -->
-    <!-- viska sugrusti i container ir section padaryti per visa o container ideti 1200px tai cill dar i viena section -->
 </body>
 </html>

@@ -1,10 +1,106 @@
 // Media queries
 
-@media screen and (max-width: 800px) {
+@media only screen and (max-width: 798px) {
     
+    .mobile-flex {
+        flex-direction: column;
 
+        .inputs {
+            width: calc(100% - 25px);
+        }
+    }
 
+    #mobile-flex-center {
+        right: inherit;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        #mobile-h3-size {
+            font-size: 1.5em;
+            line-height: 1em;
+            margin-bottom: 0;
+        }
     
+        #mobile-h4-size {
+            font-size: 1.2em;
+            line-height: 1em;
+            margin-bottom: 10px;
+        }
+    
+        .mobile-btn-1 {
+            padding: 15px;
+            font-size: 12px;
+        }
+    }
+
+    .dots {
+        display: none;
+    }
+
+    .information-about-website p {
+        padding: 10px;
+        line-height: 36px;
+    }
+
+    #mobile-size {
+        width: calc(100% - 10px);
+        display: block;
+
+        .mobile-input {
+            width: calc(100% - 88px);
+        }
+    }
+
+    #mobile-size:last-child {
+        margin-bottom: 90px;
+    }
+
+    .mobile-bikes-size {
+        width: 70%;
+    }
+
+    .bikes-img {
+        margin-top: 30px;
+    }
+
+    #mobile-h3-size {
+        font-size: 1.1em;
+        line-height: 1.1em;
+        // margin-bottom: 0;
+    }
+
+    #mobile-h4-size {
+        font-size: 0.8em;
+        line-height: 1.5em;
+        margin-bottom: 30px;
+    }
+
+    .mobile-btn-1 {
+        font-size: 0.8em;
+    }
+
+    #mobile-article-size {
+        width: calc(100% - 20px);
+        margin-bottom: 20px;
+    }
+
+    #mobile-form-size  {
+        width: 100%;
+    }
+
+    #mobile-btn-2 {
+        width: 100%;
+    }
+
+    .mobile-hr {
+        width: 100%;
+    }
+
+    .mobile-flex-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 800px) {
