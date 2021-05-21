@@ -95,6 +95,9 @@ a {
     }
 }
 
+#accBox, #bicBox, #comBox {
+    display: none;
+}
 
 nav {
     margin: 20px auto 0;
@@ -102,11 +105,42 @@ nav {
     border-top: 1px dotted #cec6bf;
     border-bottom: 1px dotted #cec6bf;
     position: relative;
+
+    .mobile-menu {
+        padding: 20px 5px 20px 20px;
+        line-height: 1.5;
+        text-align: left;
+        position: relative;
+        cursor: pointer;
+        display: none;
+
+        .label-menu {
+            width: 100%;
+            display: block;
+
+            span {
+                font-size: 14px;
+            }
+    
+            span:first-child {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .menu-checkbox {
+        display: none;
+    }
+
+    .menu-checkbox:checked + ul.disappear {
+        height: 100%;
+    }
     
     ul {
         line-height: 1.5;
         text-align: center;
         position: relative;
+        transition: .3s all ease-out;
 
         li {
             padding: 10px 20px 8px;
@@ -136,6 +170,10 @@ nav {
 
 li.call-sub-menu:hover + .sub-menu, li.call-sub-menu:focus + .sub-menu, .sub-menu:hover {
     display: block;
+}
+
+#bikeShopMenu {
+    display: none;
 }
 
 .sub-menu {

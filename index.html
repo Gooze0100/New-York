@@ -34,22 +34,35 @@
                     </a>
                 </section>
                 <nav>
-                    <ul>
+                    <aside class="mobile-menu">
+                        <label class="label-menu" for="menu">
+                            <span>
+                                <i class="fas fa-bars"></i> 
+                            </span>
+                            <span>
+                                Menu
+                            </span>
+                        </label>
+                    </aside>
+                    <input class="menu-checkbox" type="checkbox" name="menu" id="menu">
+                    <ul class="disappear">
                         <li>
                             <a href="">Home</a>
                         </li>
                         <li class="call-sub-menu" id="openSubMenu">
-                            <a href="">Bike Shop <span><i class="fas fa-chevron-down"></i></span></a>
+                            <a id='active1' href="">Bike Shop<label for="bikeShopMenu"><span id="chevronRight1"><i id="arrowDown" class="fas fa-chevron-down"></i></span></label></a>
                         </li>
+                        <input type="checkbox" name="bikeShopMenu" id="bikeShopMenu">
                         <section class="sub-menu" id="subMenu">
                             <section class="flex-as">
                                 <section class="menu-column">
                                     <div>
                                         <h3>
-                                            <a href="">Accessories</a>
+                                            <a id='active2' href="">Accessories</span><label for="accBox"><span id="chevronRight2"><i id="arrowDown1" class="fas fa-chevron-right"></i></span></label></a>
                                         </h3>
                                     </div>
-                                    <div>
+                                    <input type="checkbox" name="accBox" id="accBox">
+                                    <div id="detailed1">
                                         <div>
                                             <a href="">Bottle racks</a>
                                         </div>
@@ -64,10 +77,11 @@
                                 <section class="menu-column">
                                     <div>
                                         <h3>
-                                            <a href="">Bicycles</a>
+                                            <a id='active3' href="">Bicycles</span><label for="bicBox"><span id="chevronRight3"><i id="arrowDown2" class="fas fa-chevron-right"></i></span></label></a>
                                         </h3>
                                     </div>
-                                    <div>
+                                    <input type="checkbox" name="bicBox" id="bicBox">
+                                    <div id="detailed2">
                                         <div>
                                             <a href="">City</a>
                                         </div>
@@ -88,10 +102,11 @@
                                 <div class="menu-column">
                                     <div>
                                         <h3>
-                                            <a href="">Components</a>
+                                            <a id='active4' href="">Components</span><label for="comBox"><span id="chevronRight4"><i id="arrowDown3" class="fas fa-chevron-right"></i></span></label></a>
                                         </h3>
                                     </div>
-                                    <div>
+                                    <input type="checkbox" name="comBox" id="comBox">
+                                    <div id="detailed3">
                                         <div>
                                             <a href="">Saddles</a>
                                         </div>
@@ -106,7 +121,7 @@
                                 <div class="menu-column">
                                     <div>
                                         <a href="">
-                                            <img src="/img/Franklin-7-2017-Angle_Matte-Coral_200x.jpg" alt="Franklin type bicycle">
+                                            <img src="/img/Franklin-7-2017-Angle_Matte-Coral_1600x.jpg" alt="Franklin type bicycle">
                                         </a>
                                     </div>
                                     <div>

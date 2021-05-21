@@ -1,5 +1,34 @@
 "use strict"
 
+// Menu
+
+// Arrows
+document.querySelector('#chevronRight1').addEventListener('click', rotate1);
+document.querySelector('#chevronRight2').addEventListener('click', rotate2);;
+document.querySelector('#chevronRight3').addEventListener('click', rotate3);;
+document.querySelector('#chevronRight4').addEventListener('click', rotate4);;
+
+function rotate1() {
+    document.querySelector('#arrowDown').style.transform = 'none';
+    document.querySelector('#active1').style.color = '#dd4b39';
+}
+
+function rotate2() {
+    document.querySelector('#arrowDown1').style.transform = 'rotate(90deg)';
+    document.querySelector('#active2').style.color = '#dd4b39';
+}
+
+function rotate3() {
+    document.querySelector('#arrowDown2').style.transform = 'rotate(90deg)';
+    document.querySelector('#active3').style.color = '#dd4b39';
+}
+
+function rotate4() {
+    document.querySelector('#arrowDown3').style.transform = 'rotate(90deg)';
+    document.querySelector('#active4').style.color = '#dd4b39';
+}
+
+
 // Slideshow
 
 // const i = 0; // Start point
@@ -66,6 +95,8 @@ const bgImg3 = document.querySelector('#bgImg3')
 //     }
 //     slides[slideIndex-1].style.zIndex = "2";
 // }
+
+// globalus kintamasis
 
 // Counter
 const quantity = document.querySelector('#quantity');

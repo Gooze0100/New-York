@@ -1,6 +1,130 @@
 // Media queries
 
 @media only screen and (max-width: 798px) {
+
+    section.menu {
+        height: 100%;
+        background-color: white;
+    }
+
+    section.menu section.logo {
+        margin-top: 90px;
+    }
+
+    nav {
+
+        aside.mobile-menu {
+            display: block;
+        }
+
+        ul.disappear {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            align-items: flex-start;
+            height: 0;
+
+            li.call-sub-menu a {
+        
+                span i {
+                    transform: rotate(270deg);
+                }
+            }
+        }
+    }
+
+    li.call-sub-menu:not(.sub-menu):hover + .sub-menu, li.call-sub-menu:not(.sub-menu):focus + .sub-menu, .sub-menu:not(.sub-menu):hover {
+        display: none;
+    }
+
+    section.sub-menu {
+        position: static;
+
+        .menu-column {
+            border: none;
+
+            div h3 {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    #bikeShopMenu:checked + section#subMenu {
+        display: block;
+    }
+
+    #bikeShopMenu:checked i#arrowDown {
+        transform: none;
+    }
+
+    span#chevronRight2, span#chevronRight3, span#chevronRight4 {
+        vertical-align: middle;
+        padding: 10px;
+        font-size: 10px;
+        transition: .3s all ease-out;
+    }
+
+    span#chevronRight:first-of-type {
+        width: 100%;
+    }
+
+    section#subMenu section.flex-as {
+        display: block;
+
+        section.menu-column {
+            margin: 0;
+            margin-left: 10px;
+
+            div#detailed1 {
+                margin-left: 20px;
+                margin-bottom: 20px;
+                display: none;
+                animation-name: fadeIn;
+                animation-duration: 1s;
+                animation-fill-mode: forwards;
+            }
+            
+            div#detailed2 {
+                display: none;
+                margin-left: 20px;
+                margin-bottom: 20px;
+                animation-name: fadeIn;
+                animation-duration: 1s;
+                animation-fill-mode: forwards;
+            }
+
+            input#accBox:checked + div#detailed1 {
+                display: block;
+            }
+
+            input#bicBox:checked + div#detailed2 {
+                display: block;
+            }
+        }
+
+        div.menu-column {
+            margin: 0;
+            margin-left: 10px;
+
+            div#detailed3 {
+                display: none;
+                margin-left: 20px;
+                margin-bottom: 20px;
+                animation-name: fadeIn;
+                animation-duration: 1s;
+                animation-fill-mode: forwards;
+            }
+
+            input#comBox:checked + div#detailed3 {
+                display: block;
+            }
+        }
+
+        div.menu-column:last-child {
+            margin: 0;
+            padding: 0;
+        }
+    } 
     
     .mobile-flex {
         flex-direction: column;
@@ -101,8 +225,4 @@
         flex-direction: column;
         align-items: center;
     }
-}
-
-@media screen and (max-width: 800px) {
-    
 }
