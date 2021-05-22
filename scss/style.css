@@ -296,6 +296,40 @@ a {
 }
 
 @media only screen and (max-width: 798px) {
+  section.menu {
+    height: 100%;
+    background-color: white;
+  }
+  section.menu section.logo {
+    margin-top: 90px;
+  }
+  nav aside.mobile-menu {
+    display: block;
+  }
+  nav ul.disappear {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    height: 0;
+    visibility: hidden;
+  }
+  nav ul.disappear li.call-sub-menu a span i {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  li.call-sub-menu:not(.sub-menu):hover + .sub-menu, li.call-sub-menu:not(.sub-menu):focus + .sub-menu, .sub-menu:not(.sub-menu):hover {
+    display: none;
+  }
   .mobile-flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -478,10 +512,6 @@ nav .mobile-menu .label-menu span:first-child {
   margin-right: 10px;
 }
 
-nav .menu-checkbox {
-  display: none;
-}
-
 nav ul {
   line-height: 1.5;
   text-align: center;
@@ -515,12 +545,12 @@ nav ul li a:hover {
   color: #dd4b39;
 }
 
-span#chevronRight1 {
+nav ul li a span#chevronRight1 {
   cursor: pointer;
 }
 
-#bikeShopMenu {
-  display: none;
+#openSubMenu.call-sub-menu:hover + .sub-menu, #openSubMenu.call-sub-menu:focus + .sub-menu, .sub-menu:hover {
+  display: block;
 }
 
 .sub-menu {
@@ -602,16 +632,16 @@ span#chevronRight1 {
   color: #dd4b39;
 }
 
+.sub-menu .menu-column span#chevronRight2, .sub-menu .menu-column span#chevronRight3, .sub-menu .menu-column span#chevronRight4 {
+  display: none;
+}
+
 .sub-menu .slogan {
   font-size: 13px;
   background-color: #e0e0e0;
   margin-top: 10px;
   padding: 10px;
   border-top: 1px solid #cec6bf;
-}
-
-li.call-sub-menu:hover + .sub-menu, li.call-sub-menu:focus + .sub-menu, .sub-menu:hover {
-  display: block;
 }
 
 .all-slide-show {

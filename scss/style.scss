@@ -6,6 +6,7 @@
 @import 'media';
  
 // Search bar and fixed =========================================================
+
 .inputs {
     display: flex;
     width: calc(25% - 20px);
@@ -69,16 +70,14 @@
     }
 }
 
-// #accBox, #bicBox, #comBox {
-//     display: none;
-// }
-
 nav {
     margin: 20px auto 0;
     min-height: 35px;
     border-top: 1px dotted #cec6bf;
     border-bottom: 1px dotted #cec6bf;
     position: relative;
+
+    // Bars and menu text =========================================================
 
     .mobile-menu {
         padding: 20px 5px 20px 20px;
@@ -101,15 +100,6 @@ nav {
             }
         }
     }
-
-    .menu-checkbox {
-        display: none;
-    }
-
-    // .menu-checkbox:checked + ul.disappear {
-    //     height: 100%;
-    //     visibility: visible;
-    // }
     
     ul {
         line-height: 1.5;
@@ -138,17 +128,17 @@ nav {
                 &:hover {
                     color: $secondary-color;
                 }
+
+                span#chevronRight1 {
+                    cursor: pointer;
+                }
             }
         }
     }
 }
 
-span#chevronRight1 {
-    cursor: pointer;
-}
-
-#bikeShopMenu {
-    display: none;
+#openSubMenu.call-sub-menu:hover + .sub-menu, #openSubMenu.call-sub-menu:focus + .sub-menu, .sub-menu:hover {
+    display: block;
 }
 
 .sub-menu {
@@ -222,6 +212,10 @@ span#chevronRight1 {
                 }
             }
         }
+
+        span#chevronRight2, span#chevronRight3, span#chevronRight4 {
+            display: none;
+        }
     }
 
     & .slogan {
@@ -231,10 +225,6 @@ span#chevronRight1 {
         padding: 10px;
         border-top: 1px solid #cec6bf;
     }
-}
-
-li.call-sub-menu:hover + .sub-menu, li.call-sub-menu:focus + .sub-menu, .sub-menu:hover {
-    display: block;
 }
 
 // Slide show =========================================================
@@ -275,7 +265,6 @@ li.call-sub-menu:hover + .sub-menu, li.call-sub-menu:focus + .sub-menu, .sub-men
         }
 
         section {
-            // position: relative;
 
             aside.slideShow__caption1 {
                 position: absolute;
@@ -897,13 +886,14 @@ li.call-sub-menu:hover + .sub-menu, li.call-sub-menu:focus + .sub-menu, .sub-men
             width: calc(33.33333% - 20px);
             
             div.zoom-img {
+
                 a {
+
                     div {
                         max-width: 1800px;
                         overflow: hidden;
                         line-height: 0;
                         vertical-align: top;
-                        // width: calc(33.33333% - 20px);
 
                         img {
                             max-width: 100%;

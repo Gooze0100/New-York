@@ -2,41 +2,41 @@
 
 @media only screen and (max-width: 798px) {
 
-    // section.menu {
-    //     height: 100%;
-    //     background-color: white;
-    // }
+    section.menu {
+        height: 100%;
+        background-color: white;
+    }
 
-    // section.menu section.logo {
-    //     margin-top: 90px;
-    // }
+    section.menu section.logo {
+        margin-top: 90px;
+    }
 
-    // nav {
+    nav {
 
-    //     aside.mobile-menu {
-    //         display: block;
-    //     }
+        aside.mobile-menu {
+            display: block;
+        }
 
-    //     ul.disappear {
-    //         display: flex;
-    //         justify-content: flex-start;
-    //         flex-direction: column;
-    //         align-items: flex-start;
-    //         height: 0;
-    //         visibility: hidden;
+        ul.disappear {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            align-items: flex-start;
+            height: 0;
+            visibility: hidden;
 
-    //         li.call-sub-menu a {
+            li.call-sub-menu a {
         
-    //             span i {
-    //                 transform: rotate(270deg);
-    //             }
-    //         }
-    //     }
-    // }
+                span i {
+                    transform: rotate(270deg);
+                }
+            }
+        }
+    }
 
-    // li.call-sub-menu:not(.sub-menu):hover + .sub-menu, li.call-sub-menu:not(.sub-menu):focus + .sub-menu, .sub-menu:not(.sub-menu):hover {
-    //     display: none;
-    // }
+    li.call-sub-menu:not(.sub-menu):hover + .sub-menu, li.call-sub-menu:not(.sub-menu):focus + .sub-menu, .sub-menu:not(.sub-menu):hover {
+        display: none;
+    }
 
     // section.sub-menu {
     //     position: static;
