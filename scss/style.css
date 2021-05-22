@@ -157,6 +157,43 @@ table {
           justify-content: space-between;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Chivo', sans-serif;
+  font-size: 15px;
+  color: #404040;
+  line-height: 1.8em;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #404040;
+}
+
+.all {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.all .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 95%;
+}
+
 .btn {
   text-align: center;
   text-transform: uppercase;
@@ -259,122 +296,6 @@ table {
 }
 
 @media only screen and (max-width: 798px) {
-  section.menu {
-    height: 100%;
-    background-color: white;
-  }
-  section.menu section.logo {
-    margin-top: 90px;
-  }
-  nav aside.mobile-menu {
-    display: block;
-  }
-  nav ul.disappear {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    height: 0;
-  }
-  nav ul.disappear li.call-sub-menu a span i {
-    -webkit-transform: rotate(270deg);
-            transform: rotate(270deg);
-  }
-  li.call-sub-menu:not(.sub-menu):hover + .sub-menu, li.call-sub-menu:not(.sub-menu):focus + .sub-menu, .sub-menu:not(.sub-menu):hover {
-    display: none;
-  }
-  section.sub-menu {
-    position: static;
-  }
-  section.sub-menu .menu-column {
-    border: none;
-  }
-  section.sub-menu .menu-column div h3 {
-    margin-bottom: 10px;
-  }
-  #bikeShopMenu:checked + section#subMenu {
-    display: block;
-  }
-  #bikeShopMenu:checked i#arrowDown {
-    -webkit-transform: none;
-            transform: none;
-  }
-  span#chevronRight2, span#chevronRight3, span#chevronRight4 {
-    vertical-align: middle;
-    padding: 10px;
-    font-size: 10px;
-    -webkit-transition: .3s all ease-out;
-    transition: .3s all ease-out;
-  }
-  span#chevronRight:first-of-type {
-    width: 100%;
-  }
-  section#subMenu section.flex-as {
-    display: block;
-  }
-  section#subMenu section.flex-as section.menu-column {
-    margin: 0;
-    margin-left: 10px;
-  }
-  section#subMenu section.flex-as section.menu-column div#detailed1 {
-    margin-left: 20px;
-    margin-bottom: 20px;
-    display: none;
-    -webkit-animation-name: fadeIn;
-            animation-name: fadeIn;
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-  }
-  section#subMenu section.flex-as section.menu-column div#detailed2 {
-    display: none;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    -webkit-animation-name: fadeIn;
-            animation-name: fadeIn;
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-  }
-  section#subMenu section.flex-as section.menu-column input#accBox:checked + div#detailed1 {
-    display: block;
-  }
-  section#subMenu section.flex-as section.menu-column input#bicBox:checked + div#detailed2 {
-    display: block;
-  }
-  section#subMenu section.flex-as div.menu-column {
-    margin: 0;
-    margin-left: 10px;
-  }
-  section#subMenu section.flex-as div.menu-column div#detailed3 {
-    display: none;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    -webkit-animation-name: fadeIn;
-            animation-name: fadeIn;
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-  }
-  section#subMenu section.flex-as div.menu-column input#comBox:checked + div#detailed3 {
-    display: block;
-  }
-  section#subMenu section.flex-as div.menu-column:last-child {
-    margin: 0;
-    padding: 0;
-  }
   .mobile-flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -466,38 +387,6 @@ table {
   }
 }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: 'Chivo', sans-serif;
-  font-size: 15px;
-  color: #404040;
-  line-height: 1.8em;
-}
-
-img {
-  width: 100%;
-  height: auto;
-}
-
-a {
-  text-decoration: none;
-  color: #404040;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 95%;
-}
-
 .inputs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -546,6 +435,7 @@ a {
   position: fixed;
   width: 100%;
   z-index: 3;
+  max-width: 1800px;
 }
 
 .menu {
@@ -556,10 +446,6 @@ a {
   margin: 0 auto;
   margin-top: 60px;
   max-width: 270px;
-}
-
-#accBox, #bicBox, #comBox {
-  display: none;
 }
 
 nav {
@@ -596,10 +482,6 @@ nav .menu-checkbox {
   display: none;
 }
 
-nav .menu-checkbox:checked + ul.disappear {
-  height: 100%;
-}
-
 nav ul {
   line-height: 1.5;
   text-align: center;
@@ -633,8 +515,8 @@ nav ul li a:hover {
   color: #dd4b39;
 }
 
-li.call-sub-menu:hover + .sub-menu, li.call-sub-menu:focus + .sub-menu, .sub-menu:hover {
-  display: block;
+span#chevronRight1 {
+  cursor: pointer;
 }
 
 #bikeShopMenu {
@@ -726,6 +608,10 @@ li.call-sub-menu:hover + .sub-menu, li.call-sub-menu:focus + .sub-menu, .sub-men
   margin-top: 10px;
   padding: 10px;
   border-top: 1px solid #cec6bf;
+}
+
+li.call-sub-menu:hover + .sub-menu, li.call-sub-menu:focus + .sub-menu, .sub-menu:hover {
+  display: block;
 }
 
 .all-slide-show {

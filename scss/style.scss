@@ -1,40 +1,11 @@
 @import 'reset';
 @import 'var';
+@import 'common';
 @import 'buttons';
 @import 'keyframes';
 @import 'media';
-
-* {
-	box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'Chivo', sans-serif;
-    font-size: 15px;
-    color: $primary-color;
-    line-height: 1.8em;
-}
-
-img {
-    width: 100%;
-    height: auto;
-}
-
-a {
-    text-decoration: none;
-    color: $primary-color;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 95%;
-}
-
+ 
+// Search bar and fixed =========================================================
 .inputs {
     display: flex;
     width: calc(25% - 20px);
@@ -83,7 +54,10 @@ a {
     position: fixed;
     width: 100%;
     z-index: 3;
+    max-width: 1800px;
 }
+
+// Menu =========================================================
 
 .menu {
     padding: 15px 0 10px 0;
@@ -95,9 +69,9 @@ a {
     }
 }
 
-#accBox, #bicBox, #comBox {
-    display: none;
-}
+// #accBox, #bicBox, #comBox {
+//     display: none;
+// }
 
 nav {
     margin: 20px auto 0;
@@ -132,9 +106,10 @@ nav {
         display: none;
     }
 
-    .menu-checkbox:checked + ul.disappear {
-        height: 100%;
-    }
+    // .menu-checkbox:checked + ul.disappear {
+    //     height: 100%;
+    //     visibility: visible;
+    // }
     
     ul {
         line-height: 1.5;
@@ -168,8 +143,8 @@ nav {
     }
 }
 
-li.call-sub-menu:hover + .sub-menu, li.call-sub-menu:focus + .sub-menu, .sub-menu:hover {
-    display: block;
+span#chevronRight1 {
+    cursor: pointer;
 }
 
 #bikeShopMenu {
@@ -257,6 +232,12 @@ li.call-sub-menu:hover + .sub-menu, li.call-sub-menu:focus + .sub-menu, .sub-men
         border-top: 1px solid #cec6bf;
     }
 }
+
+li.call-sub-menu:hover + .sub-menu, li.call-sub-menu:focus + .sub-menu, .sub-menu:hover {
+    display: block;
+}
+
+// Slide show =========================================================
 
 .all-slide-show {
     position: relative;
@@ -482,6 +463,8 @@ li.call-sub-menu:hover + .sub-menu, li.call-sub-menu:focus + .sub-menu, .sub-men
     }
 }
 
+// Info about website =========================================================
+
 .information-about-website {
     
     p {
@@ -670,9 +653,13 @@ li.call-sub-menu:hover + .sub-menu, li.call-sub-menu:focus + .sub-menu, .sub-men
     }
 }
 
+// Wheel img =========================================================
+
 .bike-wheel {
     width: 100%;
 }
+
+// Testimonials =========================================================
 
 .testimonials {
     margin-bottom: 30px;
@@ -705,6 +692,8 @@ li.call-sub-menu:hover + .sub-menu, li.call-sub-menu:focus + .sub-menu, .sub-men
         }
     }
 }
+
+// Bikes images =========================================================
 
 .bikes {
     margin-top: 20px;
@@ -816,6 +805,8 @@ li.call-sub-menu:hover + .sub-menu, li.call-sub-menu:focus + .sub-menu, .sub-men
     }
 }
 
+// Video =========================================================
+
 .all-video {
     padding: 40px 0;
 
@@ -881,6 +872,8 @@ li.call-sub-menu:hover + .sub-menu, li.call-sub-menu:focus + .sub-menu, .sub-men
         }
     }
 }
+
+// Articles =========================================================
 
 .all-articles {
 
@@ -963,6 +956,8 @@ li.call-sub-menu:hover + .sub-menu, li.call-sub-menu:focus + .sub-menu, .sub-men
     }
 }
 
+// Subscription =========================================================
+
 .bg-gray {
     background-color: #e9e7e5;
     width: 100%;
@@ -1020,6 +1015,8 @@ li.call-sub-menu:hover + .sub-menu, li.call-sub-menu:focus + .sub-menu, .sub-men
     }
 }
 
+// Footer =========================================================
+
 footer {
     background-color: #222222;
     border-top: solid 1px #222222;
@@ -1074,11 +1071,4 @@ footer {
     }
 }
 
-
-
-
-
-
-
-
-
+// flex-basis buna arba auto arba 100%
